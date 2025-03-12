@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farewell Money Tracker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        input[type="radio"] {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+
+
+<h2>Farewell Money Tracker</h2>
+
+
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Paid</th>
+        <th>Not Paid</th>
+        <th>Half Paid</th>
+    </tr>
+
+
+    <script>
+        const names = [
+            "Anand Francis", "Bexcin", "Febin", "Binnesh", "Libinesh", 
+            "Ajin", "Sam", "Algin", "Libin", "Figo", 
+            "Sibin", "Jogi", "Dino", "Jalastin", "John", 
+            "Abin", "Sandeep", "Jenish", "Albino", "Abinesh"
+        ];
+
+
+        names.forEach(name => {
+            document.write(`
+                <tr>
+                    <td>${name}</td>
+                    <td><input type="radio" name="${name}" value="Paid"></td>
+                    <td><input type="radio" name="${name}" value="Not Paid"></td>
+                    <td><input type="radio" name="${name}" value="Half Paid"></td>
+                </tr>
+            `);
+        });
+    </script>
+</table>
+
+
+</body>
+</html>
+
